@@ -1,9 +1,9 @@
 // import './utils/installOfflineHardLock';
 
 import './utils/authWatcher';
-
+import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
-
+import { ConfigProvider } from './contexts/ConfigContext';
 // project imports
 import App from 'App';
 import * as serviceWorker from 'serviceWorker';
@@ -31,7 +31,15 @@ import '@fontsource/poppins/700.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <ConfigProvider>
+    <BrowserRouter>
+      {' '}
+      {/* 👈 2. Wrap your App */}
+      <App />
+    </BrowserRouter>
+  </ConfigProvider>
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
