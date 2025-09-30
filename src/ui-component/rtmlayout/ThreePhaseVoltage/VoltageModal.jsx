@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Tally5, History, Download, X, AlertTriangle, Siren, CheckCircle2, Clock } from 'lucide-react';
-import RealtimeTimeWindow from '../../../ui-component/common/RealtimeTimeWindow';
+import RealtimeTimeWindow from '../../common/RealtimeTimeWindow';
 
 import PhasorChart, { getVoltageStatus } from './PhasorChart';
 import MetricBar from './MetricBarChart';

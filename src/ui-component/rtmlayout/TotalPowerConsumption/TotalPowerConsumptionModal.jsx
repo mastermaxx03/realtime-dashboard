@@ -7,7 +7,7 @@ import { Tally5, History, Download, X, RefreshCw } from 'lucide-react';
 import TotalPowerChart from './TotalPowerChart'; // The two-ring donut
 import PowerConsumptionChart from './PowerConsumptionChart'; // The stacked bar chart
 import ImbalancePercentageChart from './ImbalancePercentageChart'; // The imbalance bar chart
-import SegmentedControl from '../../../ui-component/common/SegmentedControl'; // The reusable toggle
+import SegmentedControl from '../../common/SegmentedControl'; // The reusable toggle
 import {
   modalCardStyle,
   modalHeaderStyle,

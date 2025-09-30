@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { Maximize, Minimize } from 'lucide-react';
 import './style.css';
 import axios from 'axios';
-import SegmentedControl from '../../ui-component/common/SegmentedControl';
+import SegmentedControl from '../../ui-component/common/SegmentedControl.jsx';
 // Import all your segment components
 import PanelInfoSegment from '../../ui-component/rtmlayout/PanelInfoCard/PanelInfoSegment';
 import VoltageSegment from '../../ui-component/rtmlayout/ThreePhaseVoltage/VoltageSegmentY';
